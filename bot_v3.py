@@ -12,7 +12,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start_command(message: types.Message):
     keyboard = InlineKeyboardMarkup()
-    keyboard.add(InlineKeyboardButton("Open Web App", url="https://your-domain.com/webapp"))
+    keyboard.add(InlineKeyboardButton("Open Web App", url="https://github.com/NicePaid/app_v3/webapp"))
 
     await message.answer("Click the button below to open the Web App:", reply_markup=keyboard)
 
